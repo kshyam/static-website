@@ -9,5 +9,4 @@ tasks:
       - checkout
       - commands:
         - az login --service-principal -u $APP_ID -p $PASS --tenant $TENANT
-        - az storage blob upload-batch -s . -d '$web' --account-name $AZURE_STORAGE_ACCOUNT --overwrite true
-   
+        - az storage blob upload-batch -s . -d '$web' --account-name razorops --overwrite true
